@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/current_forecast"
+            android:title="@string/lbl_current" />
+        <item
+            android:id="@+id/minute_by_minute_forecast"
+            android:title="@string/lbl_minutely" />
+        <item
+            android:id="@+id/hour_by_hour_forecast"
+            android:title="@string/lbl_hourly"  />
+        <item
+            android:id="@+id/daily_forecast"
+            android:title="@string/lbl_daily"  />
+    </group>
+
+
+
+</menu>

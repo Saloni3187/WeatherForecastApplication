@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/lbl_type_of_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_current"
+        android:fontFamily="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/padding_between_views"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_type_of_forecast"
+        android:paddingTop="@dimen/padding_between_views"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/rl_left_side_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding_between_views">
+
+            <TextView
+                android:id="@+id/lbl_nearestStormDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_nearestStrom" />
+
+            <TextView
+                android:id="@+id/tv_nearestStormDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lbl_nearestStormDistance" />
+
+            <TextView
+                android:id="@+id/lbl_nearestStormBearing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_nearestStormDistance"
+                android:text="@string/lbl_nearestStormBearing" />
+
+            <TextView
+                android:id="@+id/tv_nearestStormBearing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_nearestStormDistance"
+                android:layout_toRightOf="@+id/lbl_nearestStormBearing" />
+
+            <TextView
+                android:id="@+id/lbl_prespIntensity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_nearestStormBearing"
+                android:text="@string/lbl_precipIntensity" />
+
+            <TextView
+                android:id="@+id/tv_prepIntensity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_nearestStormBearing"
+                android:layout_toRightOf="@+id/lbl_prespIntensity" />
+
+            <TextView
+                android:id="@+id/lbl_precipProbability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_prespIntensity"
+                android:text="@string/lbl_precipProbability" />
+
+            <TextView
+                android:id="@+id/tv_precipProb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_prespIntensity"
+                android:layout_toRightOf="@+id/lbl_precipProbability" />
+
+            <TextView
+                android:id="@+id/lbl_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_precipProbability"
+                android:text="@string/lbl_temperature" />
+
+            <TextView
+                android:id="@+id/tv_temprature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_precipProbability"
+                android:layout_toRightOf="@+id/lbl_temperature" />
+
+            <TextView
+                android:id="@+id/lbl_apparentTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_temperature"
+                android:text="@string/lbl_apparentTemperature" />
+
+            <TextView
+                android:id="@+id/tv_appreantTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_temperature"
+                android:layout_toRightOf="@+id/lbl_apparentTemperature" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_between_views">
+
+            <TextView
+                android:id="@+id/lbl_dewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_dewPoint" />
+
+            <TextView
+                android:id="@+id/tv_dewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lbl_dewPoint" />
+
+            <TextView
+                android:id="@+id/lbl_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_dewPoint"
+                android:text="@string/lbl_humidity" />
+
+            <TextView
+                android:id="@+id/tv_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_dewPoint"
+                android:layout_toRightOf="@+id/lbl_humidity" />
+
+            <TextView
+                android:id="@+id/lbl_windSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_humidity"
+                android:text="@string/lbl_windSpeed" />
+
+            <TextView
+                android:id="@+id/tv_windSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_humidity"
+                android:layout_toRightOf="@+id/lbl_windSpeed" />
+
+            <TextView
+                android:id="@+id/lbl_windBearing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_windSpeed"
+                android:text="@string/lbl_windBearing" />
+
+            <TextView
+                android:id="@+id/tv_windBearing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_windSpeed"
+                android:layout_toRightOf="@+id/lbl_windBearing" />
+
+            <TextView
+                android:id="@+id/lbl_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_windBearing"
+                android:text="@string/lbl_visibility" />
+
+            <TextView
+                android:id="@+id/tv_visibilty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_windBearing"
+                android:layout_toRightOf="@+id/lbl_visibility" />
+
+            <TextView
+                android:id="@+id/lbl_cloudCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_visibility"
+                android:text="@string/lbl_cloudCover" />
+
+            <TextView
+                android:id="@+id/tv_cloudCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_visibility"
+                android:layout_toRightOf="@+id/lbl_cloudCover" />
+
+            <TextView
+                android:id="@+id/lbl_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_cloudCover"
+                android:text="@string/lbl_pressure" />
+
+            <TextView
+                android:id="@+id/tv_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_cloudCover"
+                android:layout_toRightOf="@+id/lbl_pressure" />
+
+            <TextView
+                android:id="@+id/lbl_ozone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_pressure"
+                android:text="@string/lbl_ozone" />
+
+            <TextView
+                android:id="@+id/tv_ozone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_pressure"
+                android:layout_toRightOf="@+id/lbl_ozone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

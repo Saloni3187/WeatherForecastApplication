@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="lbl_timezone">TimeZone:</string>
+    <string name="lbl_latitude">Latitude:\n</string>
+    <string name="lbl_longitude">Longitude:\n</string>
+    <string name="action_settings">Settings</string>
+    <string name="ENABLE_GPS">Please enable GPS to view  weather data</string>
+    <string name="alert">Alert</string>
+    <string name="title_activity_weather_forecast_main_view">WeatherForecastMainView</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="lbl_no_data_available">NO DATA_AVAILABLE</string>
+    <string name="lbl_current">Current Temprature</string>
+    <string name="lbl_minutely">Minutely Forecast</string>
+    <string name="lbl_hourly">Hourly Forecast</string>
+    <string name="lbl_daily">Daily Forecast</string>
+    <string name="lbl_different_weather_data">Weather Data</string>
+    <string name="lbl_time">Time:</string>
+    <string name="lbl_text_summary">Summary:</string>
+    <string name="lbl_currentTime">Current Time :</string>
+    <string name="lbl_nearestStrom">Nearest Storm Distance:</string>
+    <string name="lbl_nearestStormBearing">Nearest Storm Bearing:</string>
+    <string name="lbl_precipIntensity">Precip Intensity:</string>
+    <string name="lbl_precipProbability">Precip Probability:</string>
+    <string name="lbl_temperature">Temperature:</string>
+    <string name="lbl_apparentTemperature">Apparent Temperature:</string>
+    <string name="lbl_dewPoint">Dew Point:</string>
+    <string name="lbl_humidity">Humidity:</string>
+    <string name="lbl_windSpeed">Wind Speed:</string>
+    <string name="lbl_windBearing">Wind Bearing:</string>
+    <string name="lbl_visibility">Visibility:</string>
+    <string name="lbl_cloudCover">Cloud Cover:</string>
+    <string name="lbl_pressure">Pressure:</string>
+    <string name="lbl_ozone">Ozone:</string>
+    <string name="lbl_sunriseTime">Sunrise Time</string>
+    <string name="lbl_sunsetTime">Sunset Time</string>
+    <string name="lbl_moonPhase">Moon Phase</string>
+    <string name="lbl_precipIntensityMax">PrecipIntensity\n Max</string>
+    <string name="lbl_precipIntensityMaxTime">PrecipIntensity \nMaxTime</string>
+    <string name="lbl_precipType">Precip Type</string>
+    <string name="lbl_temperatureMin">Temperature \nMin</string>
+    <string name="lbl_temperatureMinTime">Temperature\nMinTime</string>
+    <string name="lbl_temperatureMax">Temperature\nMax</string>
+    <string name="lbl_temperatureMaxTime">Temperature\nMaxTime</string>
+    <string name="lbl_apparentTemperatureMin">Apparent\nTemperature\nMin</string>
+    <string name="lbl_apparentTemperatureMinTime">Apparent\nTemperature\nMinTime</string>
+    <string name="lbl_apparentTemperatureMax">Apparent\nTemperature\nMax</string>
+    <string name="lbl_apparentTemperatureMaxTime">Apparent\nTemperature\nMaxTime</string>
+
+</resources>

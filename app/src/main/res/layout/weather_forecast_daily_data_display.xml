@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <include layout="@layout/weather_forecast_common_inner_view"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_left_side_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_weather_type">
+
+        <TextView
+            android:id="@+id/lbl_prespIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_precipIntensity" />
+
+        <TextView
+            android:id="@+id/tv_prepIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lbl_prespIntensity" />
+
+        <TextView
+            android:id="@+id/lbl_precipProbability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_prespIntensity"
+            android:text="@string/lbl_precipProbability" />
+
+        <TextView
+            android:id="@+id/tv_precipProb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_prespIntensity"
+            android:layout_toRightOf="@+id/lbl_precipProbability" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rite_side_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_weather_type">
+
+
+        <TextView
+            android:id="@+id/lbl_dewPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_dewPoint" />
+
+        <TextView
+            android:id="@+id/tv_dewPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lbl_dewPoint" />
+
+
+        <TextView
+            android:id="@+id/lbl_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_dewPoint"
+            android:text="@string/lbl_humidity" />
+
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_dewPoint"
+            android:layout_toRightOf="@+id/lbl_humidity" />
+
+
+        <TextView
+            android:id="@+id/lbl_windSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_humidity"
+            android:text="@string/lbl_windSpeed" />
+
+        <TextView
+            android:id="@+id/tv_windSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_humidity"
+            android:layout_toRightOf="@+id/lbl_windSpeed" />
+
+
+        <TextView
+            android:id="@+id/lbl_windBearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_windSpeed"
+            android:text="@string/lbl_windBearing" />
+
+        <TextView
+            android:id="@+id/tv_windBearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_windSpeed"
+            android:layout_toRightOf="@+id/lbl_windBearing" />
+
+
+        <TextView
+            android:id="@+id/lbl_visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_windBearing"
+            android:text="@string/lbl_visibility" />
+
+        <TextView
+            android:id="@+id/tv_visibilty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_windBearing"
+            android:layout_toRightOf="@+id/lbl_visibility" />
+
+        <TextView
+            android:id="@+id/lbl_cloudCover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_visibility"
+            android:text="@string/lbl_cloudCover" />
+
+        <TextView
+            android:id="@+id/tv_cloudCover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_visibility"
+            android:layout_toRightOf="@+id/lbl_cloudCover" />
+
+
+        <TextView
+            android:id="@+id/lbl_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_cloudCover"
+            android:text="@string/lbl_pressure" />
+
+        <TextView
+            android:id="@+id/tv_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_cloudCover"
+            android:layout_toRightOf="@+id/lbl_pressure" />
+
+        <TextView
+            android:id="@+id/lbl_ozone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_pressure"
+            android:text="@string/lbl_ozone" />
+
+        <TextView
+            android:id="@+id/tv_ozone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_pressure"
+            android:layout_toRightOf="@+id/lbl_ozone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"
+        android:text=""/>
+
+</RelativeLayout>
