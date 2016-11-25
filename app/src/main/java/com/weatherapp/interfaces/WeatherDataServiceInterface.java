@@ -21,7 +21,7 @@ public interface WeatherDataServiceInterface {
         private static WeatherDataServiceInterface service;
         public static WeatherDataServiceInterface getInstance(){
             if (service == null) {
-                Retrofit retrofit = new Retrofit.Builder().baseUrl(URLConstants.abc).
+                Retrofit retrofit = new Retrofit.Builder().baseUrl(URLConstants.BASE_URL).
                                         addConverterFactory(GsonConverterFactory.create()).build();
 
                 service = retrofit.create(WeatherDataServiceInterface.class);
